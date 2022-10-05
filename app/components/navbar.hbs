@@ -1,3 +1,4 @@
+
 <div uk-sticky>
   <nav id='desktop' class='uk-navbar-container uk-padding-small' uk-navbar>
     <div class='uk-navbar-left'>
@@ -39,6 +40,7 @@
     </div>
   </nav>
 
+  {{!-- template-lint-disable no-duplicate-landmark-elements --}}
   <nav
     id='mobile'
     class='uk-navbar uk-navbar-container uk-padding-small'
@@ -75,7 +77,9 @@
     </div>
   </nav>
 </div>
-<style scoped>
+
+{{!-- template-lint-disable no-forbidden-elements --}}
+<style>
 
   #mobile { display: block; } #desktop { display: none; } /* Larger than tablet
   */ @media (min-width: 750px) {#mobile { display: none; } #desktop { display:
