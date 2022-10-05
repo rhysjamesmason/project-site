@@ -8,10 +8,9 @@
 
     <div class='uk-grid-match' uk-grid>
       <div>
-        {{!-- template-lint-disable no-inline-styles --}}
+        {{! template-lint-disable no-inline-styles }}
         <p class='uk-heading-small'>&lt;<span style='color: yellow;'>
-                                                                     <strong
-            >STEM program</strong></span>/&gt;</p>
+            <strong>STEM program</strong></span>/&gt;</p>
       </div>
     </div>
 
@@ -61,67 +60,84 @@
 <section class='uk-padding'>
   <h1 class='uk-heading-small'><strong>Community Events and Projects for 2022</strong></h1>
 
-  {{! DVLA Code Challenge December 2022 }}
-  <div class='uk-card uk-card-secondary uk-margin-large'>
-    <div class='uk-card-media-top'>
-      <img
-        src='/images/events/b0df0-imgl9334-min-768x492.webp'
-        width=''
-        height=''
-        alt='DVLA Code Challenge December 2022'
-      />
-    </div>
-    <div class='uk-card-body'>
-      <h3 class='uk-card-title'>6th December 2022 – DVLA Code Challenge</h3>
-      <p>DVLA Code Challenge is back for 2022. Last year we ran a fully remote
-        event with over 6000 teachers and students...</p>
-      <LinkTo
-        @route='events/dvla-code-challenge-2022'
-        class='uk-button uk-button-primary uk-width-1-1'
-      >View More...</LinkTo>
-    </div>
-  </div>
+  <div class=''>
+    {{! DVLA Code Challenge December 2022 }}
 
-  {{! 6th December 2022 – Commerce in Code Challenge }}
-  <div class='uk-card uk-card-secondary uk-margin-large'>
-    <div class='uk-card-media-top'>
-      <img
-        src='/images/events/CommerceInCode-768x512.webp'
-        width=''
-        height=''
-        alt='Commerce In Code'
-      />
+    <div
+      class='uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin'
+      uk-grid
+    >
+      <div class='uk-card-media-top uk-card-media-left@s uk-cover-container'>
+        <img
+          src='/images/events/b0df0-imgl9334-min-768x492.webp'
+          alt='Winners'
+          uk-cover
+        />
+        <canvas width='600' height='400'></canvas>
+      </div>
+      <div>
+        <div class='uk-card-body'>
+          <h3 class='uk-card-title'>6th December 2022 – DVLA Code Challenge</h3>
+          <p>DVLA Code Challenge is back for 2022. Last year we ran a fully
+            remote event with over 6000 teachers and students...</p>
+          <LinkTo
+            @route='connect/events/commerce-in-code-challenge-2022'
+            class='uk-button uk-button-primary uk-width-1-1'
+          >View More...</LinkTo>
+        </div>
+      </div>
     </div>
-    <div class='uk-card-body'>
-      <h3 class='uk-card-title'>6th December 2022 – Commerce in Code Challenge</h3>
-      <p>We are proud to launch the new Commerce in Code Challenge, aimed at
-        students aged 16 -18, our new challenge brings together the DVLA Work
-        Experience ...</p>
-      <LinkTo
-        @route='events/commerce-in-code-challenge-2022'
-        class='uk-button uk-button-primary uk-width-1-1'
-      >View More...</LinkTo>
-    </div>
-  </div>
 
-  {{! Digital Inclusion Scheme }}
-  <div class='uk-card uk-card-secondary uk-margin-large'>
-    <div class='uk-card-media-top'>
-      <img
-        src='/images/events/Refurbish-768x512.webp'
-        width=''
-        height=''
-        alt='Refurbished Laptops'
-      />
+    <div
+      class='uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin'
+      uk-grid
+    >
+      <div class='uk-flex-top@s uk-card-media-right uk-cover-container'>
+        <img
+          src='/images/events/CommerceInCode-768x512.webp'
+          alt='Meeting'
+          uk-cover
+        />
+        <canvas width='600' height='400'></canvas>
+      </div>
+      <div>
+        <div class='uk-card-body'>
+        <h3 class='uk-card-title'>6th December 2022 – Commerce in Code Challenge</h3>
+        <p>We are proud to launch the new Commerce in Code Challenge, aimed at
+          students aged 16 -18, our new challenge brings together the DVLA Work
+          Experience ...</p>
+        <LinkTo
+          @route='connect/events/commerce-in-code-challenge-2022'
+          class='uk-button uk-button-primary uk-width-1-1'
+        >View More...</LinkTo>
+        </div>
+      </div>
     </div>
-    <div class='uk-card-body'>
-      <h3 class='uk-card-title'>Digital Inclusion Scheme</h3>
-      <p>Our Digital Inclusion Scheme launched on the 2nd September and our aim
-        is to recycle over 1000 laptops back into the Community for Students...</p>
-      <LinkTo
-        @route='events/digital-inclusion-scheme'
-        class='uk-button uk-button-primary uk-width-1-1'
-      >View More...</LinkTo>
+
+    <div
+      class='uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-2@s uk-margin'
+      uk-grid
+    >
+      <div class='uk-card-media-top uk-card-media-left@s uk-cover-container'>
+        <img
+          src='/images/events/Refurbish-768x512.webp'
+          alt='Refurbished Laptops'
+          uk-cover
+        />
+        <canvas width='600' height='400'></canvas>
+      </div>
+      <div>
+        <div class='uk-card-body'>
+        <h3 class='uk-card-title'>Digital Inclusion Scheme</h3>
+        <p>Our Digital Inclusion Scheme launched on the 2nd September and our
+          aim is to recycle over 1000 laptops back into the Community for
+          Students...</p>
+        <LinkTo
+          @route='connect/events/digital-inclusion-scheme'
+          class='uk-button uk-button-primary uk-width-1-1'
+        >View More...</LinkTo>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -139,11 +155,13 @@
 
   <h3 class='uk-margin'><strong>For Organisations</strong></h3>
   <p>If you want to sponsor, donate or work with us on STEM Projects we are
-    happy to work with you. Just get in touch and we&apos;ll see what we can do to
-    help your project even if its just getting the message out there.</p>
+    happy to work with you. Just get in touch and we&apos;ll see what we can do
+    to help your project even if its just getting the message out there.</p>
 
   <h3 class='uk-margin'><strong>For Individuals</strong></h3>
   <p>If you want to become a volunteer and work at DVLA, you can join our STEM
-    Programme or if you don&apos;t work at DVLA, we can help point you in the right
-    direction. Just get in touch on our <LinkTo @route="contact">Contact Us</LinkTo> page.</p>
+    Programme or if you don&apos;t work at DVLA, we can help point you in the
+    right direction. Just get in touch on our
+    <LinkTo @route='contact'>Contact Us</LinkTo>
+    page.</p>
 </section>

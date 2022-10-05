@@ -1,46 +1,38 @@
-
 <div uk-sticky>
   <nav id='desktop' class='uk-navbar-container uk-padding-small' uk-navbar>
     <div class='uk-navbar-left'>
 
       <ul class='uk-navbar-nav'>
-        <li class='uk-active'><a href='#'>Active</a></li>
+        <li class='uk-active'>
+          <LinkTo @route='index'>
+            <img src='/images/DVLA-Website90.png' alt='Wordpress' />
+          </LinkTo>
+        </li>
+        <li><LinkTo @route='index'>Home</LinkTo></li>
         <li>
-          <a href='#'>Parent</a>
-          <div class='uk-navbar-dropdown uk-navbar-dropdown-width-2'>
-            <div class='uk-navbar-dropdown-grid uk-child-width-1-2' uk-grid>
-              <div>
-                <ul class='uk-nav uk-navbar-dropdown-nav'>
-                  <li class='uk-active'><a href='#'>Active</a></li>
-                  <li><a href='#'>Item</a></li>
-                  <li class='uk-nav-header'>Header</li>
-                  <li><a href='#'>Item</a></li>
-                  <li><a href='#'>Item</a></li>
-                  <li class='uk-nav-divider'></li>
-                  <li><a href='#'>Item</a></li>
-                </ul>
-              </div>
-              <div>
-                <ul class='uk-nav uk-navbar-dropdown-nav'>
-                  <li class='uk-active'><a href='#'>Active</a></li>
-                  <li><a href='#'>Item</a></li>
-                  <li class='uk-nav-header'>Header</li>
-                  <li><a href='#'>Item</a></li>
-                  <li><a href='#'>Item</a></li>
-                  <li class='uk-nav-divider'></li>
-                  <li><a href='#'>Item</a></li>
-                </ul>
-              </div>
-            </div>
+          <LinkTo @route='connect/index'>Community Projects</LinkTo>
+          <div class='uk-navbar-dropdown'>
+            <ul class='uk-nav uk-navbar-dropdown-nav'>
+              <li><LinkTo @route='connect/gallery/index'>Gallery</LinkTo></li>
+            </ul>
           </div>
         </li>
-        <li><a href='#'>Item</a></li>
+        <li>
+          <LinkTo @route='connect/get-involved/index'>Get Involved</LinkTo>
+          <div class='uk-navbar-dropdown'>
+            <ul class='uk-nav uk-navbar-dropdown-nav'>
+              <li><LinkTo @route='downloads/index'>Downloads</LinkTo></li>
+            </ul>
+          </div>
+        </li>
+        <li><LinkTo @route='about/index'>About</LinkTo></li>
+        <li><LinkTo @route='contact'>Contact</LinkTo></li>
       </ul>
 
     </div>
   </nav>
 
-  {{!-- template-lint-disable no-duplicate-landmark-elements --}}
+  {{! template-lint-disable no-duplicate-landmark-elements }}
   <nav
     id='mobile'
     class='uk-navbar uk-navbar-container uk-padding-small'
@@ -59,14 +51,19 @@
             <ul class='uk-nav uk-navbar-dropdown-nav'>
               <li class=''><LinkTo @route='index'>Home</LinkTo></li>
               <li class=''><LinkTo @route='connect/index'>Community Projects</LinkTo></li>
-              <li class=''><LinkTo @route='connect/get-involved/index'>Get Involved</LinkTo></li>
-              <li class=''><LinkTo @route='connect/gallery/index'>Gallery</LinkTo></li>
-              <li class=''><LinkTo @route='downloads/index'>Downloads</LinkTo></li>
+              <li class=''><LinkTo @route='connect/get-involved/index'>Get
+                  Involved</LinkTo></li>
+              <li class=''><LinkTo
+                  @route='connect/gallery/index'
+                >Gallery</LinkTo></li>
+              <li class=''><LinkTo
+                  @route='downloads/index'
+                >Downloads</LinkTo></li>
               <li class='uk-nav-divider'></li>
-              <li><LinkTo @route="about/index">About us!</LinkTo></li>
-              <li><LinkTo @route="contact">Contact us!</LinkTo></li>
+              <li><LinkTo @route='about/index'>About us!</LinkTo></li>
+              <li><LinkTo @route='contact'>Contact us!</LinkTo></li>
               <li class='uk-nav-divider'></li>
-              <li><LinkTo @route="index">Go to Welsh Version</LinkTo></li>
+              <li><LinkTo @route='index'>Go to Welsh Version</LinkTo></li>
             </ul>
           </div>
         </div>
@@ -78,7 +75,7 @@
   </nav>
 </div>
 
-{{!-- template-lint-disable no-forbidden-elements --}}
+{{! template-lint-disable no-forbidden-elements }}
 <style>
 
   #mobile { display: block; } #desktop { display: none; } /* Larger than tablet
