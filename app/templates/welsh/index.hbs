@@ -1,5 +1,8 @@
 {{page-title 'Home'}}
-
+<div class="uk-alert-primary" uk-alert style="margin: 0;">
+    <a class="uk-alert-close" uk-close></a>
+    <p><strong>Did you know?</strong> This site is also in <strong>English</strong>. <LinkTo @route="index">Click here to go to the English version</LinkTo></p>
+</div>
 {{! Header }}
 <div class='uk-section uk-section-primary uk-section-xlarge uk-light'>
   <div class='uk-container'>
@@ -74,7 +77,7 @@
       <p>DVLA Code Challenge is back for 2022. Last year we ran a fully remote
         event with over 6000 teachers and students...</p>
       <LinkTo
-        @route='events/dvla-code-challenge-2022'
+        @route='index'
         class='uk-button uk-button-primary uk-width-1-1'
       >View More...</LinkTo>
     </div>
@@ -96,7 +99,7 @@
         students aged 16 -18, our new challenge brings together the DVLA Work
         Experience ...</p>
       <LinkTo
-        @route='events/commerce-in-code-challenge-2022'
+        @route='index'
         class='uk-button uk-button-primary uk-width-1-1'
       >View More...</LinkTo>
     </div>
@@ -117,7 +120,7 @@
       <p>Our Digital Inclusion Scheme launched on the 2nd September and our aim
         is to recycle over 1000 laptops back into the Community for Students...</p>
       <LinkTo
-        @route='events/digital-inclusion-scheme'
+        @route='index'
         class='uk-button uk-button-primary uk-width-1-1'
       >View More...</LinkTo>
     </div>

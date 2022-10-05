@@ -7,6 +7,16 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
+  // English Routes
   this.route('index', { path: '/' });
   this.route('contact/index', { path: '/contact' });
+  this.route('whats-on');
+
+  // Events (EN)
+  this.route('events/dvla-code-challenge-2022');
+  this.route('events/commerce-in-code-challenge-2022');
+  this.route('events/digital-inclusion-scheme');
+
+  // Welsh Routes
+  this.route('welsh/index', { path: '/cy' });
 });
