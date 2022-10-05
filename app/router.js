@@ -9,14 +9,22 @@ export default class Router extends EmberRouter {
 Router.map(function () {
   // English Routes
   this.route('index', { path: '/' });
-  this.route('contact/index', { path: '/contact' });
+  this.route('contact');
+  this.route('about/index', { path: '/about' });
   this.route('whats-on');
 
-  // Events (EN)
-  this.route('events/dvla-code-challenge-2022');
-  this.route('events/commerce-in-code-challenge-2022');
-  this.route('events/digital-inclusion-scheme');
+  // Community Projects (EN) [Connect]
+  this.route('connect/index', { path: '/connect/community' });
+  this.route('connect/get-involved/index', { path: '/connect/get-involved' });
 
-  // Welsh Routes
-  this.route('welsh/index', { path: '/cy' });
+  // Events (EN) [Connect]
+  this.route('connect/events/dvla-code-challenge-2022');
+  this.route('connect/events/commerce-in-code-challenge-2022');
+  this.route('connect/events/digital-inclusion-scheme');
+
+  // Gallery (EN) [Connect]
+  this.route('connect/gallery/index', { path: '/connect/gallery' });
+
+  // Downloads (EN)
+  this.route('downloads/index', { path: '/downloads' });
 });

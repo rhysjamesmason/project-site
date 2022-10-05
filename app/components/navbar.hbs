@@ -52,43 +52,19 @@
         aria-label='Open Menu'
       ></a>
       <div class='uk-navbar-dropdown uk-navbar-dropdown-width-2'>
-        <div class='uk-navbar-dropdown-grid uk-child-width-1-2' uk-grid>
+        <div class='uk-navbar-dropdown-grid' uk-grid>
           <div>
             <ul class='uk-nav uk-navbar-dropdown-nav'>
-              <li class='uk-nav-header'>Community Projects</li>
-              <li class=''><a href='#'>DVLA Code Challenge</a></li>
-              <li class=''><a href='#'>Studen Computer Scheme</a></li>
-              <li class=''><a href='#'>Event Calendar</a></li>
-              <li class=''><a href='#'>After School Classes</a></li>
-              <li class=''><a href='#'>Bring your school to visit</a></li>
-              <li class=''><a href='#'>Partner Events</a></li>
-              <li class=''><a href='#'>Oppitunities</a></li>
-              <li class='uk-nav-header'>Get Invloved</li>
-              <li class=''><a href='#'>Our Partners and Sponsors</a></li>
-              <li class=''><a href='#'>Donations</a></li>
-              <li class=''><a href='#'>Volunteering</a></li>
+              <li class=''><LinkTo @route='index'>Home</LinkTo></li>
+              <li class=''><LinkTo @route='connect/index'>Community Projects</LinkTo></li>
+              <li class=''><LinkTo @route='connect/get-involved/index'>Get Involved</LinkTo></li>
+              <li class=''><LinkTo @route='connect/gallery/index'>Gallery</LinkTo></li>
+              <li class=''><LinkTo @route='downloads/index'>Downloads</LinkTo></li>
               <li class='uk-nav-divider'></li>
-              <li class='uk-nav-header'>Gallery</li>
-            </ul>
-          </div>
-          <div>
-            <ul class='uk-nav uk-navbar-dropdown-nav'>
-              <li class='uk-nav-header'>Downloads</li>
-              <li class=''><a href='#'>Event Entry Forms</a></li>
-              <li class=''><a href='#'>Sponsor Registration Form</a></li>
-              <li class=''><a href='#'>Press releases/News articles</a></li>
-              <li class=''><a href='#'>Videos</a></li>
-              <li class='uk-nav-header'>About Us</li>
-              <li><a href='#'>DVLA STEM Programme</a></li>
-              <li><a href='#'>DVLA</a></li>
-              <li><a href='#'>Our Team</a></li>
-              <li><a href='#'>Privacy Policy</a></li>
+              <li><LinkTo @route="about/index">About us!</LinkTo></li>
+              <li><LinkTo @route="contact">Contact us!</LinkTo></li>
               <li class='uk-nav-divider'></li>
-              <li class='uk-nav-header'><LinkTo @route='contact/index'>Contact
-                  Us</LinkTo></li>
-              <li class='uk-nav-header'><LinkTo
-                  @route='index'
-                >Home</LinkTo></li>
+              <li><LinkTo @route="index">Go to Welsh Version</LinkTo></li>
             </ul>
           </div>
         </div>
