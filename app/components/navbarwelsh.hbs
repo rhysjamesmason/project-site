@@ -4,30 +4,30 @@
 
       <ul class='uk-navbar-nav'>
         <li class='uk-active'>
-          <LinkTo @route='index'>
-            <img src='/images/DVLA-Website90.png' alt='Wordpress' />
+          <LinkTo @route='welsh/index'>
+            <img src='/images/DVLA-Website90.png' alt='Logo-DVLA' />
           </LinkTo>
         </li>
-        <li><LinkTo @route='index'>Home</LinkTo></li>
+        <li><LinkTo @route='welsh/index'>Hafan</LinkTo></li>
         {{!-- <li><LinkTo @route='blog/index'>Blog</LinkTo></li> --}}
         <li>
-          <LinkTo @route='connect/index'>Community Projects</LinkTo>
+          <LinkTo @route='welsh/connect/index'>Prosiectau Cymunedol</LinkTo>
           <div class='uk-navbar-dropdown'>
             <ul class='uk-nav uk-navbar-dropdown-nav'>
-              <li><LinkTo @route='connect/gallery/index'>Gallery</LinkTo></li>
+              <li><LinkTo @route='welsh/connect/gallery/index'>Oriel</LinkTo></li>
             </ul>
           </div>
         </li>
         <li>
-          <LinkTo @route='connect/get-involved/index'>Get Involved</LinkTo>
+          <LinkTo @route='welsh/connect/get-involved/index'>Cymryd Rhan</LinkTo>
           <div class='uk-navbar-dropdown'>
             <ul class='uk-nav uk-navbar-dropdown-nav'>
-              <li><LinkTo @route='downloads/index'>Downloads</LinkTo></li>
+              <li><LinkTo @route='welsh/downloads/index'>lawrlwythiadau</LinkTo></li>
             </ul>
           </div>
         </li>
-        <li><LinkTo @route='about/index'>About</LinkTo></li>
-        <li><LinkTo @route='contact'>Contact</LinkTo></li>
+        <li><LinkTo @route='welsh/about/index'>am</LinkTo></li>
+        <li><LinkTo @route='welsh/contact'>cyswllt</LinkTo></li>
       </ul>
 
     </div>
@@ -50,27 +50,24 @@
         <div class='uk-navbar-dropdown-grid' uk-grid>
           <div>
             <ul class='uk-nav uk-navbar-dropdown-nav'>
-              <li class=''><LinkTo @route='index'>Home</LinkTo></li>
-              <li class=''><LinkTo @route='connect/index'>Community Projects</LinkTo></li>
-              <li class=''><LinkTo @route='connect/get-involved/index'>Get
-                  Involved</LinkTo></li>
+              <li class=''><LinkTo @route='welsh/index'>Hafan</LinkTo></li>
+              <li class=''><LinkTo @route='welsh/connect/index'>Prosiectau Cymunedol</LinkTo></li>
+              <li class=''><LinkTo @route='welsh/connect/get-involved/index'>Cymryd Rhan</LinkTo></li>
               <li class=''><LinkTo
-                  @route='connect/gallery/index'
-                >Gallery</LinkTo></li>
+                  @route='welsh/connect/gallery/index'
+                >Oriel</LinkTo></li>
               <li class=''><LinkTo
-                  @route='downloads/index'
-                >Downloads</LinkTo></li>
+                  @route='welsh/downloads/index'
+                >lawrlwythiadau</LinkTo></li>
               <li class='uk-nav-divider'></li>
-              <li><LinkTo @route='about/index'>About us!</LinkTo></li>
-              <li><LinkTo @route='contact'>Contact us!</LinkTo></li>
-              <li class='uk-nav-divider'></li>
-              <li><LinkTo @route='index'>Go to Welsh Version</LinkTo></li>
+              <li><LinkTo @route='welsh/about/index'>am</LinkTo></li>
+              <li><LinkTo @route='welsh/contact'>cyswllt</LinkTo></li>
             </ul>
           </div>
         </div>
       </div>
       <LinkTo @route='index'>
-        <img src='/images/DVLA-Website90.png' alt='Wordpress' />
+        <img src='/images/DVLA-Website90.png' alt='Logo-DVLA' />
       </LinkTo>
     </div>
   </nav>

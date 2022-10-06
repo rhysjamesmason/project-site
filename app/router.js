@@ -13,6 +13,10 @@ Router.map(function () {
   this.route('about/index', { path: '/about' });
   this.route('whats-on');
 
+  // Blog (EN) [Connect]
+  this.route('blog/index', { path: '/connect' });
+  this.route('blog/posts/post', { path: '/connect/:post_id' });
+
   // Community Projects (EN) [Connect]
   this.route('connect/index', { path: '/connect/community' });
   this.route('connect/get-involved/index', { path: '/connect/get-involved' });
@@ -27,4 +31,31 @@ Router.map(function () {
 
   // Downloads (EN)
   this.route('downloads/index', { path: '/downloads' });
+
+  // Welsh Routes
+  this.route('welsh/index', { path: '/welsh' });
+  this.route('welsh/contact');
+  this.route('welsh/about/index', { path: '/welsh/about' });
+  this.route('welsh/whats-on');
+
+  // Blog (Welsh) [Connect]
+  this.route('welsh/blog/index', { path: '/welsh/connect' });
+  this.route('welsh/blog/posts/post', { path: '/welsh/connect/:post_id' });
+
+  // Community Projects (Welsh) [Connect]
+  this.route('welsh/connect/index', { path: '/welsh/connect/community' });
+  this.route('welsh/connect/get-involved/index', {
+    path: '/welsh/connect/get-involved',
+  });
+
+  // Events (Welsh) [Connect]
+  this.route('welsh/connect/events/dvla-code-challenge-2022');
+  this.route('welsh/connect/events/commerce-in-code-challenge-2022');
+  this.route('welsh/connect/events/digital-inclusion-scheme');
+
+  // Gallery (Welsh) [Connect]
+  this.route('welsh/connect/gallery/index', { path: '/welsh/connect/gallery' });
+
+  // Downloads (Welsh)
+  this.route('welsh/downloads/index', { path: '/welsh/downloads' });
 });

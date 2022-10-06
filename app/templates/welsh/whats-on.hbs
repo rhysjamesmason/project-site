@@ -1,38 +1,33 @@
-{{page-title "What's On!"}}
-{{!-- template-lint-disable no-inline-styles --}}
-<div uk-alert class="uk-alert-primary" style="margin: 0;">
-    <h3>Notice</h3>
-    <p>This site is a project and any details that is entered to this site will be rejected/not sent. The official stem site is the the following: <a href="http://stem.dvla.gov.uk">http://stem.dvla.gov.uk</a></p>
-</div>
-<Navbar />
+{{page-title "Beth Sy'n Cael Ei Gynnal!"}}
+<Navbarwelsh />
 
 <section class='uk-padding uk-margin'>
-  <h1><strong>What&apos;s On</strong></h1>
-  <p class='uk-margin'>The DVLA STEM Programme runs several events and projects
-    throughout the year. The main focus is always to benefit the community
-    across Wales, by providing fun and educational activities and events for
-    children and young adults aged 7 to 18, and by helping other organisations
-    with their own STEM projects. All our projects are led by our STEM
-    volunteers. If you work for DVLA, you will have the opportunity to get
-    involved with many different events, from national competitions like the
-    DVLA Code Challenge, to individual school hosting days or after school
-    clubs.</p>
+  <h1><strong>Beth Sy'n Cael Ei Gynnal</strong></h1>
+  <p class='uk-margin'>Mae Rhaglen STEM y DVLA yn cynnal nifer o ddigwyddiadau a
+    phrosiectau yn ystod y flwyddyn. Y prif ffocws bob tro yw rhoi budd i'r
+    gymuned ledled Cymru, drwy ddarparu gweithgareddau a digwyddiadau hwylus ac
+    addysgiadol i blant ac oedolion ifanc 7 i 18 oed, a thrwy helpu sefydliadau
+    eraill â phrosiectau STEM eu hunain. Arweinir ein holl brosiectau gan ein
+    gwirfoddolwyr STEM. Os ydych chi'n gweithio i'r DVLA, byddwch yn cael y
+    cyfle i ymgysylltu â nifer o wahanol ddigwyddiadau, o gystadlaethau
+    cenedlaethol fel Her Codio'r DVLA, i ddiwrnodau gwesteio ysgolion unigol neu
+    glybiau ar ôl ysgol.</p>
 
-  <p class='uk-margin'>Click on any of the links below to find out more about
-    the events and projects we are running this year.</p>
+  <p class='uk-margin'>Cliciwch ar unrhyw un o'r dolenni isod i ddysgu rhagor am
+    y digwyddiadau a'r prosiectau rydym yn eu cynnal eleni.</p>
 
-  <p class='uk-margin'>We believe that Wales has the potential to lead in
-    technology and innovation both now and in the future. These projects are
-    just some of the ways that DVLA is helping communities and investing in
-    future generations of technologists.</p>
+  <p class='uk-margin'>Credwn fod gan Gymru'r potensial i arwain yn y meysydd
+    technoleg ac arloesi nawr ac yn y dyfodol. Dim ond rhai o'r ffyrdd yw'r
+    prosiectau hyn y mae'r DVLA yn helpu cymunedau ac yn buddsoddi yng
+    nghenedlaethau'r dyfodol o dechnolegwyr.</p>
 </section>
 
 <section class='uk-padding'>
   {{! Code Challenges }}
-  <h2>DVLA Code Challenge</h2>
+  <h2>Her Codio'r DVLA</h2>
   <div class='uk-card uk-card-secondary uk-margin-large'>
     <div class='uk-card-media-top'>
-      {{!-- template-lint-disable require-valid-alt-text --}}
+      {{! template-lint-disable require-valid-alt-text }}
       <img
         src='/images/events/b0df0-imgl9334-min-768x492.webp'
         width=''
@@ -41,19 +36,19 @@
       />
     </div>
     <div class='uk-card-body'>
-      <h3 class='uk-card-title'>6th December 2022 – DVLA Code Challenge</h3>
-      <p>DVLA Code Challenge is back for 2022. Last year we ran a fully remote
-        event with over 6000 teachers and students...</p>
+      <h3 class='uk-card-title'>Her Godio&apos;r DVLA Rhagfyr 2022</h3>
+      <p>Mae Her Godio DVLA yn ôl ar gyfer 2022. Y llynedd cynhaliwyd digwyddiad
+        cwbl ar-lein gyda dros 6000 o athrawon a myfyrwyr yn ymuno...</p>
       <LinkTo
-        @route='events/dvla-code-challenge-2022'
+        @route='welsh/events/dvla-code-challenge-2022'
         class='uk-button uk-button-primary uk-width-1-1'
-      >View More...</LinkTo>
+      >Dysgwch fwy...</LinkTo>
     </div>
   </div>
 
   <div class='uk-card uk-card-secondary uk-margin-large'>
     <div class='uk-card-media-top'>
-      {{!-- template-lint-disable require-valid-alt-text --}}
+      {{! template-lint-disable require-valid-alt-text }}
       <img
         src='/images/events/b0df0-imgl9334-min-768x492.webp'
         width=''
@@ -62,15 +57,14 @@
       />
     </div>
     <div class='uk-card-body'>
-      <h3 class='uk-card-title'>Commerce in Code December 2022</h3>
-      <p>We are proud to launch the new Commerce in Code Challenge, aimed at
-        students aged 16 -18 our new challenge brings together the DVLA Work
-        Experience Programme with real-life goals for business and IT
-        Students...</p>
+      <h3 class='uk-card-title'>Her Godio mewn Masnach Rhagfyr 2022</h3>
+      <p>Rydym yn falch o lansio'r Her Godio mewn Masnach newydd, wedi'i hanelu
+        at fyfyrwyr 16-18 oed. Mae ein her newydd yn dwyn ynghyd Raglen Profiad
+        Gwaith y DVLA gyda nodau bywyd go iawn ar gyfer Myfyrwyr busnes a TG...</p>
       <LinkTo
         @route='events/commerce-in-code-challenge-2022'
         class='uk-button uk-button-primary uk-width-1-1'
-      >View More...</LinkTo>
+      >Dysgwch fwy...</LinkTo>
     </div>
   </div>
 
@@ -78,7 +72,7 @@
   <h2>Digital Inclusion Scheme</h2>
   <div class='uk-card uk-card-secondary uk-margin-large'>
     <div class='uk-card-media-top'>
-      {{!-- template-lint-disable require-valid-alt-text --}}
+      {{! template-lint-disable require-valid-alt-text }}
       <img
         src='/images/events/IMG_6030-768x512.webp'
         width=''
@@ -101,7 +95,7 @@
   <h2>After School Classes</h2>
   <div class='uk-card uk-card-secondary uk-margin-large'>
     <div class='uk-card-media-top'>
-      {{!-- template-lint-disable require-valid-alt-text --}}
+      {{! template-lint-disable require-valid-alt-text }}
       <img
         src='/images/events/Code-Club_06-2-768x511.webp'
         width=''
@@ -113,7 +107,9 @@
       <p>Unfortunately we have suspended our after school classes due to the
         pandemic. We will be resuming these when it is safe and practical to do
         so. Check back to see when we start the classes again or get in touch on
-        our <LinkTo @route='contact'>Contact Us</LinkTo> page.</p>
+        our
+        <LinkTo @route='contact'>Contact Us</LinkTo>
+        page.</p>
     </div>
   </div>
 
@@ -121,13 +117,8 @@
   <h2>School Hosting Days</h2>
   <div class='uk-card uk-card-secondary uk-margin-large'>
     <div class='uk-card-media-top'>
-      {{!-- template-lint-disable require-valid-alt-text --}}
-      <img
-        src='/images/events/IMG_9983.webp'
-        width=''
-        height=''
-        alt=''
-      />
+      {{! template-lint-disable require-valid-alt-text }}
+      <img src='/images/events/IMG_9983.webp' width='' height='' alt='' />
     </div>
     <div class='uk-card-body'>
       <p>Unfortunately we have suspended our School Hosting Days due to the
@@ -139,5 +130,4 @@
     </div>
   </div>
 </section>
-
-<Footer />
+<Footerwelsh />
